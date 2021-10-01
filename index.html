@@ -1,0 +1,48 @@
+<html>
+    <head>
+        <title>Halo Filter</title>
+    
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.js"></script>
+        <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+    </head>
+    <body>
+        <style>
+            body{
+                background-image: url("https://t3.ftcdn.net/jpg/00/96/84/80/360_F_96848069_HTLTEiqF1YEU3T1CgjbzfYyVZK7CsVkz.jpg");
+                background-position: center;
+                background-size: cover;
+                font-size: 22px;
+                font-family: cursive;
+            }
+            canvas{
+            background-color: navy;
+            border-radius: 10px;
+        }
+        canvas{
+            animation-name: cool;
+            animation-duration: 4s;
+animation-iteration-count: infinite;
+        }
+        @keyframes cool{
+            from{
+                box-shadow: 5px 5px 30px rgb(0, 162, 255);
+            }
+            to{
+                box-shadow: 5px 5px 30px rgb(0, 47, 255);
+            }
+        }
+        </style>
+        <center>
+            <h1 class= "btn btn-success"> Halo Filter </h1>
+            <br> <br>
+            
+            <button onclick= "saveImg()" class= "btn btn-warning">Save</button>
+        </center>
+    </body>
+    <script src= "script.js"></script>
+</html>
